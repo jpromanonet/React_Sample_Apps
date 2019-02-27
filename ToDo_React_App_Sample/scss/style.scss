@@ -1,0 +1,63 @@
+.apptitle {
+  margin: 1rem 0;
+  color: #FFD700;
+  text-align: center;
+  background-color: #3CB371;
+  border-radius: 5px;
+}
+//.appPending {
+  //margin: 1rem 0;
+  //color: #FFD700;
+  //text-align: center;
+  //background-color: #B22222;
+  //border-radius: 5px;
+//}
+.todolist {
+  padding-left: 0;
+
+  .todoitem {
+    position: relative;
+    margin-bottom: 0.25rem;
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: 5px;
+    &.done {
+      background-color: #3CB371;
+      border-radius: 5px;
+      .form-check-label {
+        color: #FFFFFF;
+        font-weight: bold;
+      text-decoration: line-through;
+      }
+    }
+
+    &.highlight {
+      border-color: #ff2968;
+      background-color: #ff8fb0;
+      
+      &:last-child {
+        border-color: #ff2968;
+      }
+    }
+    
+    &:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .btn-danger {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+    }
+    
+    .form-check-label {
+      width: 100%;
+
+      .form-check-input {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
